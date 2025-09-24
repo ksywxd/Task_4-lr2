@@ -15,7 +15,10 @@ int main()
 
     double A, B, C, K;
     cin >> A >> B >> C >> K;
-    if (A == B || A == C || B == C) cout << "A B C must be different"<<endl;
+    if (A == B || A == C || B == C) {
+        cout << "A B C must be different";
+        return 0;
+    }
     else {
         double max = A;
         if (B > max) max = B;
